@@ -3,43 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Cancionero Patrio</title>
+    <title>Cancionero Patrio</title>
+
+    <meta name="description"
+    content="Cancionero Patrio hecho en conjunto por la Direccion Nacional de Elencos Estables, Media Music, INAMU, y AMA.">
+    <meta name="keywords"
+        content="cancionero, cancionero patrio, himno nacional, himno nacional oficial, aurora, himno nacional argentino, himno argentino, canciones patrias, canciones patrias argentinas">
+    <meta name="robots" content="index, follow">
+
+    <!-- Meta for Share -->
+    <meta property="og:title" content="Cancionero Patrio">
+    <meta property="og:description"
+        content="Los Elencos Estables de Argentina presentan “El Cancionero Patrio”. Grabado por más de 500 artistas. Declarado de Interés Nacional – Decreto 345/2023">
+    <meta name="twitter:title" content="Cancionero Patrio">
+    <meta name="twitter:description"
+        content="Los Elencos Estables de Argentina presentan “El Cancionero Patrio”. Grabado por más de 500 artistas. Declarado de Interés Nacional – Decreto 345/2023">
+
+    <!-- Preload -->
+    <!-- Canonical for Search -->
+    <link rel="canonical" href="https://elcancioneropatrio.com/">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Main Styles -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <header class="header">
         <div class="header-content">
             <div class="main-image">
-                <img src="" alt="Logo del Cancionero Patrio"> <!-- Agregar imagen -->
+                <img src="./img/logo_cancionero_patrio.png" alt="Logo del Cancionero Patrio">
             </div>
-            <img src="" alt="Separador del Cancionero Patrio"> <!-- Agregar imagen -->
+            <img src="./img/linea_divisora.png" alt="Separador del Cancionero Patrio">
             <p>Los Elencos Estables de Argentina presentan <span>“El Cancionero Patrio”</span> <br> Grabado por más de 500 artistas <br> <span>Declarado de Interés Nacional – Decreto 345/2023</span></p>
         </div>
 
         <div class="header-effects">
             <div class="left">
-                <img src="" alt="Efecto del Cancionero Patrio"> <!-- Agregar imagen -->
-            </div>
-
-            <div class="right">
-                <img src="" alt="Efecto del Cancionero Patrio"> <!-- Agregar imagen -->
+                <img src="./img/destellos.png" alt="Efecto del Cancionero Patrio">
             </div>
 
             <div class="end">
-                <img src="" alt="Efecto transicion de los elencos estables"> <!-- Agregar imagen -->
+                <img src="./img/divisor_01.png" alt="Efecto transicion de los elencos estables">
             </div>
         </div>
     </header>
  
-    <button onclick="scrollToTop()" id="topButton" title="Ir Arriba"></button> <!-- Agregar Icono -->
+    <button onclick="scrollToTop()" id="topButton" title="Ir Arriba"><img src="./img/arrow.png" alt="Flecha de la web del Cancionero Patrio"></button>
 
     <nav class="nav">
         <div class="nav-buttons">
-            <a href="#"> <!-- Agregar Link -->
-                <img src="" alt="Spotify"> <!-- Agregar imagen: logo + texto -->
+            <a href="https://open.spotify.com/intl-es/album/1p8Qz5C05KM7j9M5cHbXLw?si=E-qOEQoHRsiN8oL7nIzEBw&nd=1&dlsi=7399799ac56e4c34">
+                <img src="./img/spotify.png" alt="Spotify">
             </a>
-            <a href="#"> <!-- Agregar Link -->
-                <img src="" alt="Apple Music"> <!-- Agregar imagen: logo + texto -->
+            <a href="https://music.apple.com/ar/album/el-cancionero-patrio/1716775846">
+                <img src="./img/apple_music.png" alt="Apple Music">
             </a>
             <button onclick="scrollTo()" id=""> 
                 Sobre el Proyecto
@@ -53,12 +72,7 @@
 
             <button class="nav-song-container" onclick="scrollTo()" id=""> 
                 <div class="song-left">
-                    <div class="song-number">
-                        <p>1</p>
-                        <p>></p> <!-- Agregar Icono: PLAY -->
-                    </div>
-    
-                    <p>| HIMNO NACIONAL ARGENTINO</p>
+                    <p>1 | HIMNO NACIONAL ARGENTINO</p>
                 </div>
 
                 <div class="song-right">
@@ -82,12 +96,14 @@
     <section class="songs">
         <div class="song-container-video">
             <div class="left">
-                <div class="video"></div> <!-- Agregar Video -->
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/7cywqdlY9Vg"> </iframe>
+                </div>
 
                 <div class="see-more-buttons"> 
-                    <a href="#">Spotify</a>  <!-- Agregar Link + Agregar Icono -->
-                    <a href="#">Apple Music</a>  <!-- Agregar Link + Agregar Icono -->
-                    <a href="#">Youtube</a>  <!-- Agregar Link + Agregar Icono -->
+                    <a href="https://open.spotify.com/intl-es/track/7irD78jssamuBlFpWv1CDU?si=2befc58a8201459e">Spotify</a>
+                    <a href="https://music.apple.com/ar/album/himno-nacional-argentino/1716775846?i=1716776150">Apple Music</a>
+                    <a href="https://www.youtube.com/embed/7cywqdlY9Vg">Youtube</a>
                 </div>
             </div>
 
@@ -95,7 +111,9 @@
                 <h3>Titulo</h3>
                 <p>Texto con <span>span de cada elenco</span></p>
 
-                <div class="audio"></div> <!-- Agregar Audio -->
+                <div class="audio">
+                    <audio src="./audio/Himno Nacional MM.wav" controls="true"></audio>
+                </div>
             </div>
         </div>
 
@@ -106,11 +124,13 @@
             </div>
 
             <div class="right">
-                <div class="audio"></div> <!-- Agregar Audio -->
+                <div class="audio">
+                    <audio src="./audio/Himno Nacional MM.wav" controls="true"></audio>
+                </div>
 
                 <div class="see-more-buttons"> 
-                    <a href="#">Spotify</a>  <!-- Agregar Link + Agregar Icono -->
-                    <a href="#">Apple Music</a>  <!-- Agregar Link + Agregar Icono -->
+                    <a href="#">Spotify</a>
+                    <a href="#">Apple Music</a> 
                 </div>
             </div>
         </div>
@@ -118,18 +138,18 @@
 
     <section class="about">
         <div>
-            <img src="" alt="Efecto transicion de los elencos estables"> <!-- Agregar Imagen -->
+            <img src="./img/divisor_02.png" alt="Efecto transicion de los elencos estables"> 
         </div>
         <p>todo el texto ese largo</p>
     </section>
 
     <section class="credits">
         <div>
-            <img src="" alt="Efecto transicion de los elencos estables"> <!-- Agregar Imagen -->
+            <img src="./img/divisor_03.png" alt="Efecto transicion de los elencos estables">
         </div>
 
         <div class="credits-image">
-            <img src="" alt="Imagen de los Elencos Estables">  <!-- Agregar Imagen -->
+            <img src="./img/bander_elencos.png" alt="Imagen de los Elencos Estables">  <!-- Agregar Imagen -->
         </div>
 
         <div class="credits-buttons">
@@ -148,11 +168,13 @@
 
     <footer class="footer">
         <div>
-            <img src="" alt="Efecto transicion de los elencos estables"> <!-- Agregar Imagen -->
+            <img src="./img/divisor_04.png" alt="Efecto transicion de los elencos estables">
         </div>
 
         <img src="" alt="Footer del Cancionero Patrio"> <!-- Agregar Imagen -->
     </footer>
+
+    <script src="./script.js"></script>
 
 </body>
 </html>
