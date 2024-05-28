@@ -167,7 +167,7 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 10rem;
+  padding: 5.2vw;
 }
 .header .header-content .main-image {
   width: 28%;
@@ -176,7 +176,7 @@ ul {
   height: 70vh;
 }
 .header .header-content p {
-  font-size: 3rem;
+  font-size: 1.6vw;
   color: #666664;
 }
 .header .header-content p span {
@@ -195,6 +195,29 @@ ul {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .header .header-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6rem 0 3rem;
+  }
+  .header .header-content .main-image {
+    width: 80%;
+  }
+  .header .header-content p {
+    width: 90%;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 6rem;
+  }
+  .header .header-effects .left {
+    width: 40%;
+  }
+  .header .header-effects .end {
+    bottom: -3rem;
+  }
+}
 /** Nav **/
 .nav {
   margin-top: 13vh;
