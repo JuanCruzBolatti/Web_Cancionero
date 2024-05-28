@@ -2,13 +2,15 @@
 .cursor {
     pointer-events: none;
     position: fixed;
-    top: 1vw;
-    left: 3.15vw;
+    top: 86.5vh;
+    left: 3.85vw;
+    mix-blend-mode: difference;
     z-index: 1000;
+    transform: scale(1.5);
     transition: transform .2s ease-in-out;
 
     circle {
-        fill: $color-dark-blue;
+        fill: #8A6436;
         transition: fill .3s ease-in-out;
     }
 }
@@ -16,6 +18,18 @@
 /* To Top Button */
 .topButton {
     position: fixed;
+    width: 7rem;
     bottom: 3rem;
     right: 3rem;
+    aspect-ratio: 1;
+    background-color: $color-light-blue;
+    border: none;
+    border-radius: 50%;
+    z-index: 500;
+    opacity: 0;
+    transition: .2s ease-in-out;
+
+    img {
+        width: 50%;
+    }
 }

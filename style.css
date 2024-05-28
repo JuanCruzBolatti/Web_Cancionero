@@ -38,6 +38,11 @@ body {
   line-height: 1.6;
   background-color: #ffffff;
   color: #313131;
+  cursor: none;
+}
+
+button {
+  cursor: none;
 }
 
 /* Selection */
@@ -120,21 +125,34 @@ ul {
 .cursor {
   pointer-events: none;
   position: fixed;
-  top: 1vw;
-  left: 3.15vw;
+  top: 86.5vh;
+  left: 3.85vw;
+  mix-blend-mode: difference;
   z-index: 1000;
+  transform: scale(1.5);
   transition: transform 0.2s ease-in-out;
 }
 .cursor circle {
-  fill: #272d53;
+  fill: #8A6436;
   transition: fill 0.3s ease-in-out;
 }
 
 /* To Top Button */
 .topButton {
   position: fixed;
+  width: 7rem;
   bottom: 3rem;
   right: 3rem;
+  aspect-ratio: 1;
+  background-color: #3ca0d3;
+  border: none;
+  border-radius: 50%;
+  z-index: 500;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.topButton img {
+  width: 50%;
 }
 
 /** Header **/
@@ -196,7 +214,6 @@ ul {
   background-size: 250%;
   background-position: 100%;
   border-radius: 2rem;
-  outline: 2px #3ca0d3 solid;
   transition: 0.15s ease-in-out;
 }
 .nav .nav-buttons a .first {
@@ -207,17 +224,15 @@ ul {
 }
 .nav .nav-buttons a:hover {
   background-position: 0%;
-  outline: 6px #3ca0d3 solid;
 }
 .nav .nav-buttons button {
   width: 100%;
-  cursor: pointer;
   background: rgb(102, 159, 208);
   background: linear-gradient(45deg, rgb(102, 159, 208) 0%, rgb(47, 53, 88) 48%, rgb(45, 49, 83) 50%);
   background-size: 250%;
   background-position: 100%;
   border-radius: 2rem;
-  border: 2px #3ca0d3 solid;
+  border: none;
   transition: 0.15s ease-in-out;
 }
 .nav .nav-buttons button p {
@@ -244,7 +259,6 @@ ul {
   background-color: #272d53;
   border: none;
   border-radius: 2rem;
-  cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 .nav .nav-songs .nav-song-container .song-left {
@@ -323,9 +337,10 @@ ul {
 
 /** Songs **/
 .songs {
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 .songs .song-container-video {
+  margin-bottom: 15vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -349,12 +364,40 @@ ul {
   line-height: 4.2rem;
   font-weight: bold;
   margin: 0;
+  text-transform: uppercase;
   color: #272d53;
 }
 .songs .song-container-video .right p {
   color: #895236;
   font-weight: bold;
   font-size: 2.5rem;
+}
+.songs .song-container-audio {
+  margin-bottom: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: flex-start;
+}
+.songs .song-container-audio .left {
+  width: calc(50% - 2.5rem);
+}
+.songs .song-container-audio .left h3 {
+  font-size: 4rem;
+  line-height: 4.2rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  color: #272d53;
+}
+.songs .song-container-audio .left p {
+  color: #895236;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.songs .song-container-audio .right {
+  width: calc(50% - 2.5rem);
 }
 
 .see-more-buttons {
@@ -369,12 +412,25 @@ ul {
   margin: 0;
   color: #fff;
   font-size: 2rem;
-  border-radius: 1.5rem;
-  background: rgb(102, 159, 208);
-  background: linear-gradient(45deg, rgb(102, 159, 208) 0%, rgb(47, 53, 88) 48%, rgb(45, 49, 83) 50%);
+  background: rgb(241, 36, 58);
+  background: linear-gradient(45deg, rgb(241, 36, 58) 0%, rgb(45, 49, 83) 50%);
   background-size: 250%;
   background-position: 100%;
   transition: 0.15s ease-in-out;
+}
+.see-more-buttons a:first-of-type {
+  border-radius: 2rem 0 0 2rem;
+  background: rgb(30, 207, 95);
+  background: linear-gradient(45deg, rgb(30, 207, 95) 0%, rgb(45, 49, 83) 50%);
+  background-size: 250%;
+  background-position: 100%;
+}
+.see-more-buttons a:last-of-type {
+  border-radius: 0 2rem 2rem 0;
+  background: rgb(247, 0, 0);
+  background: linear-gradient(45deg, rgb(247, 0, 0) 0%, rgb(45, 49, 83) 50%);
+  background-size: 250%;
+  background-position: 100%;
 }
 .see-more-buttons a:hover {
   background-position: 0%;
@@ -383,6 +439,7 @@ ul {
 .audio {
   background-color: #272d53;
   border-radius: 2rem;
+  margin-bottom: 1rem;
 }
 
 /** About **/

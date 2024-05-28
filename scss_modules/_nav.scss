@@ -17,7 +17,6 @@
             background-size: 250%;
             background-position: 100%;
             border-radius: 2rem;
-            outline: 2px $color-light-blue solid;
             transition: .15s ease-in-out;
 
             .first {
@@ -30,19 +29,17 @@
 
             &:hover {
                 background-position: 0%;
-                outline: 6px $color-light-blue solid;
             }
         }
 
         button {
             width: 100%;
-            cursor: pointer;
             background: rgb(102,159,208);
             background: linear-gradient(45deg, rgba(102,159,208,1) 0%, rgba(47,53,88,1) 48%, rgba(45,49,83,1) 50%);
             background-size: 250%;
             background-position: 100%;
             border-radius: 2rem;
-            border: 2px $color-light-blue solid;
+            border: none;
             transition: .15s ease-in-out;
 
             p {
@@ -73,7 +70,6 @@
             background-color: $color-dark-blue;
             border: none;
             border-radius: 2rem;
-            cursor: pointer;
             transition: .2s ease-in-out;
 
             .song-left {

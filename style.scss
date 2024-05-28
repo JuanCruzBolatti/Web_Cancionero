@@ -50,7 +50,11 @@ body {
     line-height: 1.6;
     background-color: $background-color;
     color: #313131;
-    // cursor: none;
+    cursor: none;
+}
+
+button {
+    cursor: none;
 }
 
 /* Selection */
