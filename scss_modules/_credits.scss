@@ -7,7 +7,7 @@
         position: absolute;
         width: 100%;
         left: 0;
-        top: -7rem;
+        top: -4.3rem;
     }
 
     .container {
@@ -155,6 +155,7 @@
             margin-top: 5vh;
 
             p {
+                text-align: center;
                 font-size: 3rem;
                 margin: 0;
                 color: $color-dark-blue;
@@ -167,6 +168,8 @@
         }
 
         .advisors {
+            margin-top: 5rem;
+            text-align: center;
             h4 {
                 font-size: 3rem;
                 margin: 0;

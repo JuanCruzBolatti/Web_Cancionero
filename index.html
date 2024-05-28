@@ -60,10 +60,10 @@
         </div>
     </header>
 
-    <button class="topButton display-pc" onclick="scrollToTop()" id="topButton" title="Ir Arriba"><img src="./img/arrow.png"
-            alt="Flecha de la web del Cancionero Patrio"></button> <!-- Borrar display pc -->
+    <button class="topButton" onclick="scrollToTop()" id="topButton" title="Ir Arriba"><img src="./img/arrow.png"
+            alt="Flecha de la web del Cancionero Patrio"></button>
 
-    <nav class="container nav display-pc"> <!-- Borrar display pc -->
+    <nav class="container nav">
         <div class="nav-buttons">
             <a
                 href="https://open.spotify.com/intl-es/album/1p8Qz5C05KM7j9M5cHbXLw?si=E-qOEQoHRsiN8oL7nIzEBw&nd=1&dlsi=7399799ac56e4c34">
@@ -72,17 +72,17 @@
             <a href="https://music.apple.com/ar/album/el-cancionero-patrio/1716775846">
                 <img class="second" src="./img/apple_music.png" alt="Apple Music">
             </a>
-            <button onclick="scrollTo()" id="" style="margin-bottom: 1rem;">
+            <button onclick="scrollToElement('about')">
                 <p>Sobre el Proyecto</p>
             </button>
-            <button onclick="scrollTo()" id="">
+            <button onclick="scrollToElement('credits')">
                 <p>Quienes Somos</p>
             </button>
         </div>
 
         <div class="nav-songs">
 
-            <button class="nav-song-container" onclick="scrollTo()" id="">
+            <button class="nav-song-container" onclick="scrollToElement('song01')">
                 <div class="song-left">
                     <p>1</p>
                     <p>|</p>
@@ -103,7 +103,7 @@
                 </div>
             </button>
 
-            <button class="nav-song-container" onclick="scrollTo()" id="">
+            <button class="nav-song-container" onclick="scrollToElement('song02')">
                 <div class="song-left">
                     <p>2</p>
                     <p>|</p>
@@ -116,7 +116,7 @@
                 </div>
             </button>
 
-            <button class="nav-song-container" onclick="scrollTo()" id="">
+            <button class="nav-song-container" onclick="scrollToElement('song03')">
                 <div class="song-left">
                     <p>3</p>
                     <p>|</p>
@@ -128,7 +128,7 @@
                 </div>
             </button>
 
-            <button class="nav-song-container" onclick="scrollTo()" id="">
+            <button class="nav-song-container" onclick="scrollToElement('song04')">
                 <div class="song-left">
                     <p>4</p>
                     <p>|</p>
@@ -140,8 +140,7 @@
                 </div>
             </button>
 
-
-            <button class="nav-song-container" onclick="scrollTo()" id="">
+            <button class="nav-song-container" onclick="scrollToElement('song05')">
                 <div class="song-left">
                     <p>5</p>
                     <p>|</p>
@@ -153,7 +152,7 @@
                 </div>
             </button>
 
-            <button class="nav-song-container" onclick="scrollTo()" id="">
+            <button class="nav-song-container" onclick="scrollToElement('song06')">
                 <div class="song-left">
                     <p>6</p>
                     <p>|</p>
@@ -166,7 +165,7 @@
                 </div>
             </button>
 
-            <button class="nav-song-container" onclick="scrollTo()" id="">
+            <button class="nav-song-container" onclick="scrollToElement('song07')">
                 <div class="song-left">
                     <p>7</p>
                     <p>|</p>
@@ -179,7 +178,7 @@
                 </div>
             </button>
 
-            <button class="nav-song-container" onclick="scrollTo()" id="">
+            <button class="nav-song-container" onclick="scrollToElement('song08')">
                 <div class="song-left">
                     <p>8</p>
                     <p>|</p>
@@ -195,13 +194,10 @@
         </div>
     </nav>
 
-    <section class="container songs display-pc "> <!-- Borrar display pc -->
-        <div class="song-container-video">
+    <section class="container songs">
+        <div class="song-container-video" id="song01">
             <div class="left">
-                <iframe src="https://www.youtube.com/embed/7cywqdlY9Vg?si=Ng0n8yQn-3v9OuJF" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+                <iframe src="https://www.youtube.com/embed/7cywqdlY9Vg"></iframe>
 
                 <div class="see-more-buttons">
                     <a
@@ -225,12 +221,9 @@
             </div>
         </div>
 
-        <div class="song-container-video">
+        <div class="song-container-video" id="song02">
             <div class="left">
-                <iframe src="https://www.youtube.com/embed/7cywqdlY9Vg?si=Ng0n8yQn-3v9OuJF" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+                <iframe src="https://www.youtube.com/embed/8ofG84IKZrA"> </iframe>
 
                 <div class="see-more-buttons">
                     <a
@@ -247,12 +240,12 @@
                     Por el Coro Nacional de Niños dirigido por María Isabel Sanz. Piano: Natalia Suriano.</p>
 
                 <div class="audio">
-                    <audio src="./audio/Himno Nacional MM.wav" controls="true"></audio>
+                    <audio src="./audio/Bandera MM.wav" controls="true"></audio>
                 </div>
             </div>
         </div>
 
-        <div class="song-container-audio">
+        <div class="song-container-audio" id="song03">
             <div class="left">
                 <h3>3 | LA MARCHA DE SAN LORENZO
                 </h3>
@@ -262,7 +255,7 @@
 
             <div class="right">
                 <div class="audio">
-                    <audio src="./audio/Himno Nacional MM.wav" controls="true"></audio>
+                    <audio src="./audio/Marcha San Lorenzo MM.wav" controls="true"></audio>
                 </div>
 
                 <div class="see-more-buttons">
@@ -272,12 +265,9 @@
             </div>
         </div>
 
-        <div class="song-container-video">
+        <div class="song-container-video" id="song04">
             <div class="left">
-                <iframe src="https://www.youtube.com/embed/7cywqdlY9Vg?si=Ng0n8yQn-3v9OuJF" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+                <iframe src="https://www.youtube.com/embed/rlBPmc6KZ_w"> </iframe>
 
                 <div class="see-more-buttons">
                     <a
@@ -294,17 +284,14 @@
                     Por el Coro Polifónico Nacional dirigido por Antonio Domenighini. Piano: Claudio Santoro.</p>
 
                 <div class="audio">
-                    <audio src="./audio/Himno Nacional MM.wav" controls="true"></audio>
+                    <audio src="./audio/Sarmiento MM.wav" controls="true"></audio>
                 </div>
             </div>
         </div>
 
-        <div class="song-container-video">
+        <div class="song-container-video" id="song05">
             <div class="left">
-                <iframe src="https://www.youtube.com/embed/7cywqdlY9Vg?si=Ng0n8yQn-3v9OuJF" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+                <iframe src="https://www.youtube.com/embed/zZo7tY-Vshc"> </iframe>
 
                 <div class="see-more-buttons">
                     <a
@@ -322,12 +309,12 @@
                     Por la Orquesta Sinfónica Nacional. Solista: Sebastián Russo (tenor), integrante del Coro Polifónico Nacional.</p>
 
                 <div class="audio">
-                    <audio src="./audio/Himno Nacional MM.wav" controls="true"></audio>
+                    <audio src="./audio/Aurora  MM.wav" controls="true"></audio>
                 </div>
             </div>
         </div>
 
-        <div class="song-container-audio">
+        <div class="song-container-audio" id="song06">
             <div class="left">
                 <h3>6 | MARCHA DE LAS MALVINAS
                 </h3>
@@ -337,7 +324,7 @@
 
             <div class="right">
                 <div class="audio">
-                    <audio src="./audio/Himno Nacional MM.wav" controls="true"></audio>
+                    <audio src="./audio/Malvinas MM.wav" controls="true"></audio>
                 </div>
 
                 <div class="see-more-buttons">
@@ -347,12 +334,9 @@
             </div>
         </div>
 
-        <div class="song-container-video">
+        <div class="song-container-video" id="song07">
             <div class="left">
-                <iframe src="https://www.youtube.com/embed/7cywqdlY9Vg?si=Ng0n8yQn-3v9OuJF" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+                <iframe src="https://www.youtube.com/embed/hMjvpkGDa_0"> </iframe>
 
                 <div class="see-more-buttons">
                     <a
@@ -370,12 +354,12 @@
                     Por la Orquesta Nacional de Música Argentina Juan de Dios Filiberto y el Coro Nacional de Música Argentina.</p>
 
                 <div class="audio">
-                    <audio src="./audio/Himno Nacional MM.wav" controls="true"></audio>
+                    <audio src="./audio/La Martin Guemes MM.wav" controls="true"></audio>
                 </div>
             </div>
         </div>
 
-        <div class="song-container-audio">
+        <div class="song-container-audio" id="song08">
             <div class="left">
                 <h3>8 | Himno al Libertador Gral. San Martín</h3>
                 <p>(Arturo Luzzati/Segundo Argañaraz)
@@ -384,7 +368,7 @@
 
             <div class="right">
                 <div class="audio">
-                    <audio src="./audio/Himno Nacional MM.wav" controls="true"></audio>
+                    <audio src="./audio/Himno San martin MM.wav" controls="true"></audio>
                 </div>
 
                 <div class="see-more-buttons">
@@ -396,9 +380,10 @@
 
     </section>
 
-    <section class="about display-pc"> <!-- Borrar display pc -->
+    <section class="about" id="about">
         <div class="about-divider">
-            <img src="./img/divisor_02.png" alt="Efecto transicion de los elencos estables">
+            <img class="display-pc" src="./img/divisor_02.png" alt="Efecto transicion de los elencos estables">
+            <img class="display-mobile" src="./img/divisor_celular_02.png" alt="Efecto transicion de los elencos estables">
         </div>
         <div class="container about-content">
             <h2>Sobre el Proyecto</h2>
@@ -436,9 +421,10 @@
 
     </section>
 
-    <section class="credits display-pc"> <!-- Borrar display pc -->
+    <section class="credits" id="credits">
         <div class="credits-devider">
-            <img src="./img/divisor_03.png" alt="Efecto transicion de los elencos estables">
+            <img class="display-pc" src="./img/divisor_03.png" alt="Efecto transicion de los elencos estables">
+            <img class="display-mobile" src="./img/divisor_celular_03.png" alt="Efecto transicion de los elencos estables">
         </div>
 
         <div class="container">
@@ -491,7 +477,8 @@
 
     <footer class="footer display-pc"> <!-- Borrar display pc -->
         <div>
-            <img src="./img/divisor_04.png" alt="Efecto transicion de los elencos estables">
+            <img class="display-pc" src="./img/divisor_04.png" alt="Efecto transicion de los elencos estables">
+            <img class="display-mobile" src="./img/divisor_celular_04.png" alt="Efecto transicion de los elencos estables">
         </div>
 
         <img src="" alt="Footer del Cancionero Patrio"> <!-- Agregar Imagen -->

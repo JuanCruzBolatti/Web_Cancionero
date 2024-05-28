@@ -9,15 +9,26 @@ function scrollToTop() {
     });
 }
 
+function getScrollOffsetY(element) {
+    var rect = element.getBoundingClientRect();
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    return rect.top + scrollTop;
+}
+
 function scrollTo(element) {
     document.body.scroll({
-        top: getScrollOffsetY(element),
+        top: getScrollOffsetY(element) - 150,
         behavior: "smooth"
     });
     document.documentElement.scroll({
-        top: getScrollOffsetY(element),
+        top: getScrollOffsetY(element) - 150,
         behavior: "smooth"
     });
+}
+
+function scrollToElement(id) {
+    var cancion = document.getElementById(id);
+    scrollTo(cancion);
 }
 
 const toTopButton = document.querySelector('.topButton');

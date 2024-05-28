@@ -42,6 +42,10 @@
             border: none;
             transition: .15s ease-in-out;
 
+            &:first-of-type {
+                margin-bottom: 1rem;
+            }
+
             p {
                 font-weight: bold;
                 font-size: 2.5rem;
@@ -151,6 +155,99 @@
             &:hover {
                 &::after {
                     width: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .nav {
+        margin-top: 13vh;
+        gap: 1.5rem;
+    
+        .nav-buttons {
+            a {
+                margin-bottom: 1.5rem;
+    
+                .first {
+                    width: 35%;
+                }
+    
+                .second {
+                    width: 55%;
+                }
+            }
+    
+            button {
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
+    
+        .nav-songs {
+    
+            .nav-song-container {
+                .song-left {
+                    padding: 2rem;
+    
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        margin-top: 13vh;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    
+        .nav-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+
+            a {
+                margin-bottom: 0;
+            }
+    
+            button {
+    
+                p {
+                    font-size: 2rem;
+                }
+
+                &:first-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    
+        .nav-songs {
+            gap: 1rem;
+    
+            .nav-song-container {
+    
+                .song-left {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 2.5rem;
+    
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+    
+                .song-right {
+                    display: none;
                 }
             }
         }
