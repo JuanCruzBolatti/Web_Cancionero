@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cancionero Patrio</title>
 
     <meta name="description"
-    content="Cancionero Patrio hecho en conjunto por la Direccion Nacional de Elencos Estables, Media Music, INAMU, y AMA.">
+        content="Cancionero Patrio hecho en conjunto por la Direccion Nacional de Elencos Estables, Media Music, INAMU, y AMA.">
     <meta name="keywords"
         content="cancionero, cancionero patrio, himno nacional, himno nacional oficial, aurora, himno nacional argentino, himno argentino, canciones patrias, canciones patrias argentinas">
     <meta name="robots" content="index, follow">
@@ -25,18 +26,26 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="normalize.css">
     <!-- Main Styles -->
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png"/>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <div class="cursor display-pc">
+        <svg height="10" width="10">
+            <circle id="circle" cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+    </div>
+
     <header class="header">
         <div class="header-content">
             <div class="main-image">
                 <img src="./img/logo_cancionero_patrio.png" alt="Logo del Cancionero Patrio">
             </div>
             <img src="./img/linea_divisora.png" alt="Separador del Cancionero Patrio">
-            <p>Los Elencos Estables de Argentina presentan <span>“El Cancionero Patrio”</span> <br> Grabado por más de 500 artistas <br> <span>Declarado de Interés Nacional – Decreto 345/2023</span></p>
+            <p>Los Elencos Estables de Argentina presentan <span>“El Cancionero Patrio”</span> <br> Grabado por más de
+                500 artistas <br> <span>Declarado de Interés Nacional – Decreto 345/2023</span></p>
         </div>
 
         <div class="header-effects">
@@ -49,30 +58,34 @@
             </div>
         </div>
     </header>
- 
-    <button onclick="scrollToTop()" id="topButton" title="Ir Arriba"><img src="./img/arrow.png" alt="Flecha de la web del Cancionero Patrio"></button>
 
-    <nav class="nav">
+    <button class="topButton" onclick="scrollToTop()" id="topButton" title="Ir Arriba"><img src="./img/arrow.png"
+            alt="Flecha de la web del Cancionero Patrio"></button>
+
+    <nav class="container nav">
         <div class="nav-buttons">
-            <a href="https://open.spotify.com/intl-es/album/1p8Qz5C05KM7j9M5cHbXLw?si=E-qOEQoHRsiN8oL7nIzEBw&nd=1&dlsi=7399799ac56e4c34">
-                <img src="./img/spotify.png" alt="Spotify">
+            <a
+                href="https://open.spotify.com/intl-es/album/1p8Qz5C05KM7j9M5cHbXLw?si=E-qOEQoHRsiN8oL7nIzEBw&nd=1&dlsi=7399799ac56e4c34">
+                <img class="first" src="./img/spotify.png" alt="Spotify">
             </a>
             <a href="https://music.apple.com/ar/album/el-cancionero-patrio/1716775846">
-                <img src="./img/apple_music.png" alt="Apple Music">
+                <img class="second" src="./img/apple_music.png" alt="Apple Music">
             </a>
-            <button onclick="scrollTo()" id=""> 
-                Sobre el Proyecto
+            <button onclick="scrollTo()" id="" style="margin-bottom: 1rem;">
+                <p>Sobre el Proyecto</p>
             </button>
-            <button onclick="scrollTo()" id=""> 
-                Quienes Somos
+            <button onclick="scrollTo()" id="">
+                <p>Quienes Somos</p>
             </button>
         </div>
 
         <div class="nav-songs">
 
-            <button class="nav-song-container" onclick="scrollTo()" id=""> 
+            <button class="nav-song-container" onclick="scrollTo()" id="">
                 <div class="song-left">
-                    <p>1 | HIMNO NACIONAL ARGENTINO</p>
+                    <p>1</p>
+                    <p>|</p>
+                    <p>HIMNO NACIONAL ARGENTINO</p>
                 </div>
 
                 <div class="song-right">
@@ -86,6 +99,94 @@
                     <div id="dot-08"></div>
                     <div id="dot-09"></div>
                     <div id="dot-10"></div>
+                </div>
+            </button>
+
+            <button class="nav-song-container" onclick="scrollTo()" id="">
+                <div class="song-left">
+                    <p>2</p>
+                    <p>|</p>
+                    <p>SALVE ARGENTINA</p>
+                </div>
+
+                <div class="song-right">
+                    <div id="dot-03"></div>
+                    <div id="dot-11"></div>
+                </div>
+            </button>
+
+            <button class="nav-song-container" onclick="scrollTo()" id="">
+                <div class="song-left">
+                    <p>3</p>
+                    <p>|</p>
+                    <p>LA MARCHA DE SAN LORENZO</p>
+                </div>
+
+                <div class="song-right">
+                    <div id="dot-05"></div>
+                </div>
+            </button>
+
+            <button class="nav-song-container" onclick="scrollTo()" id="">
+                <div class="song-left">
+                    <p>4</p>
+                    <p>|</p>
+                    <p>HIMNO A SARMIENTO</p>
+                </div>
+
+                <div class="song-right">
+                    <div id="dot-04"></div>
+                </div>
+            </button>
+
+
+            <button class="nav-song-container" onclick="scrollTo()" id="">
+                <div class="song-left">
+                    <p>5</p>
+                    <p>|</p>
+                    <p>AURORA</p>
+                </div>
+
+                <div class="song-right">
+                    <div id="dot-07"></div>
+                </div>
+            </button>
+
+            <button class="nav-song-container" onclick="scrollTo()" id="">
+                <div class="song-left">
+                    <p>6</p>
+                    <p>|</p>
+                    <p>MARCHA DE LAS MALVINAS</p>
+                </div>
+
+                <div class="song-right">
+                    <div id="dot-06"></div>
+                    <div id="dot-02"></div>
+                </div>
+            </button>
+
+            <button class="nav-song-container" onclick="scrollTo()" id="">
+                <div class="song-left">
+                    <p>7</p>
+                    <p>|</p>
+                    <p>LA MARTÍN GÜEMES</p>
+                </div>
+
+                <div class="song-right">
+                    <div id="dot-06"></div>
+                    <div id="dot-02"></div>
+                </div>
+            </button>
+
+            <button class="nav-song-container" onclick="scrollTo()" id="">
+                <div class="song-left">
+                    <p>8</p>
+                    <p>|</p>
+                    <p>HIMNO AL LIBERTADOR GRAL. SAN MARTÍN</p>
+                </div>
+
+                <div class="song-right">
+                    <div id="dot-04"></div>
                     <div id="dot-11"></div>
                 </div>
             </button>
@@ -93,22 +194,54 @@
         </div>
     </nav>
 
-    <section class="songs">
+    <section class="container songs">
         <div class="song-container-video">
             <div class="left">
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/7cywqdlY9Vg"> </iframe>
-                </div>
+                <iframe src="https://www.youtube.com/embed/7cywqdlY9Vg?si=Ng0n8yQn-3v9OuJF" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
 
-                <div class="see-more-buttons"> 
-                    <a href="https://open.spotify.com/intl-es/track/7irD78jssamuBlFpWv1CDU?si=2befc58a8201459e">Spotify</a>
-                    <a href="https://music.apple.com/ar/album/himno-nacional-argentino/1716775846?i=1716776150">Apple Music</a>
-                    <a href="https://www.youtube.com/embed/7cywqdlY9Vg">Youtube</a>
+                <div class="see-more-buttons">
+                    <a
+                        href="https://open.spotify.com/intl-es/track/7irD78jssamuBlFpWv1CDU?si=2befc58a8201459e">Spotify</a>
+                    <a href="https://music.apple.com/ar/album/himno-nacional-argentino/1716775846?i=1716776150">Apple
+                        Music</a>
+                    <a href="https://www.youtube.com/watch?v=7cywqdlY9Vg">Youtube</a>
                 </div>
             </div>
 
             <div class="right">
-                <h3>Titulo</h3>
+                <h3>1 | HIMNO NACIONAL ARGENTINO</h3>
+                <p>(Vicente López y Planes/Blas Parera)
+                    Interpretado por más de 500 artistas juntos por primera vez, integrantes de:
+                    Banda Sinfónica Nacional de Ciegos “Pascual Grisolía”, Coro Nacional de Música Argentina, Coro Nacional de Niños, Coro Polifónico Nacional, Coro Polifónico Nacional de Ciegos “Carlos Larrimbe”, Orquesta Nacional de Música Argentina “Juan de Dios Filiberto”, Orquesta Sinfónica Nacional, Programa Escuela de Canto Coral.
+                    Participan en video: Ballet Folklórico Nacional y Compañía Nacional de Danza Contemporánea.</p>
+
+                <div class="audio">
+                    <audio src="./audio/Himno Nacional MM.wav" controls="true"></audio>
+                </div>
+            </div>
+        </div>
+
+        <div class="song-container-video">
+            <div class="left">
+                <iframe src="https://www.youtube.com/embed/7cywqdlY9Vg?si=Ng0n8yQn-3v9OuJF" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+
+                <div class="see-more-buttons">
+                    <a
+                        href="https://open.spotify.com/intl-es/track/7irD78jssamuBlFpWv1CDU?si=2befc58a8201459e">Spotify</a>
+                    <a href="https://music.apple.com/ar/album/himno-nacional-argentino/1716775846?i=1716776150">Apple
+                        Music</a>
+                    <a href="https://www.youtube.com/watch?v=7cywqdlY9Vg">Youtube</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <h3>1 | Titulo</h3>
                 <p>Texto con <span>span de cada elenco</span></p>
 
                 <div class="audio">
@@ -128,41 +261,105 @@
                     <audio src="./audio/Himno Nacional MM.wav" controls="true"></audio>
                 </div>
 
-                <div class="see-more-buttons"> 
+                <div class="see-more-buttons">
                     <a href="#">Spotify</a>
-                    <a href="#">Apple Music</a> 
+                    <a href="#">Apple Music</a>
                 </div>
             </div>
         </div>
+
     </section>
 
     <section class="about">
-        <div>
-            <img src="./img/divisor_02.png" alt="Efecto transicion de los elencos estables"> 
+        <div class="about-divider">
+            <img src="./img/divisor_02.png" alt="Efecto transicion de los elencos estables">
         </div>
-        <p>todo el texto ese largo</p>
+        <div class="container about-content">
+            <h2>Sobre el Proyecto</h2>
+            <p><span>Las palabras rubricadas en el decreto presidencial N° 345/2023 lo dicen de un modo formal:</span>
+                <br>
+                “Este proyecto reunió por primera vez a todos los elencos estables, por ser las orquestas y coros más
+                importantes del país, y demandó un profundo trabajo de revisión de arreglos para respetar las
+                consideraciones oficiales en cuanto a tonalidades y partituras de referencia, con la tecnología más
+                avanzada, y adaptar cada una de ellas a las características de los elencos participantes. La iniciativa
+                constituye un aporte a la cultura y tiene por objetivo destacar la importancia de aquellas canciones e
+                himnos que nos representan y son un punto de encuentro para todo el pueblo argentino.”</p>
+            <p>Pero quienes trabajamos en esto e hicimos nuestro aporte de alguna manera (gestores, productores,
+                técnicos, instrumentistas, cantantes, directores, administrativos) sabemos que es en realidad el
+                resultado de un profundo deseo, un sueño largamente anhelado, un objetivo cumplido. El de registrar
+                nuestras bellísimas canciones patrias por los artistas de la Dirección Nacional de Elencos Estables, del
+                Ministerio de Cultura de la Nación, para ponerlas a disposición de las escuelas de todo el país y de
+                todos los argentinos. El desafío era importante, porque se trataba a la vez de respetar las versiones
+                oficiales y de obtener el mejor y más profesional resultado técnico y artístico con más de 500 artistas.
+                Y por eso, convocamos además al estudio de <span>Oscar Mediavilla</span> que hizo la curaduría y puso a
+                disposición del proyecto su estudio de grabación y edición con el moderno sistema Dolby Atmos.</p>
+            <p>Hoy podemos decir que estas canciones están allí y son nuestras, que trabajaron en su realización muchos
+                de los mejores artistas que tiene nuestro país, que la música vuelve a unirnos con melodías y textos que
+                llevamos en nuestros corazones desde niños y que todas las escuelas del país, sin importar su lugar o su
+                condición, podrán disponer gratuitamente de ellas, mancomunadas en el mismo idioma poético y musical y
+                abrazadas en un mismo sentimiento.</p>
+            <p>Allí están esas piezas que nos siguen identificando, la patria que nos contiene a todos, el amor por
+                nuestros hermanos de todo el país, la tierra que pisamos todos. Nada mejor que esas canciones que son
+                nuestras para recordarnos lo mejor de nuestra historia grande y común, para sumarnos, para crecer y
+                desarrollarnos juntos, para caminar sin divisiones; todo con el único deseo de ser cada vez mejores y
+                volver a darnos cuenta que cuando nos unimos detrás de un objetivo común en el que no existen banderías
+                ni controversias, los resultados que podemos alcanzar los argentinos son enormemente más satisfactorios.
+            </p>
+            <p class="about-end"> <span>Mariela Bolatti</span> - Directora Nacional de Elencos Estables</p>
+        </div>
+
     </section>
 
     <section class="credits">
-        <div>
+        <div class="credits-devider">
             <img src="./img/divisor_03.png" alt="Efecto transicion de los elencos estables">
         </div>
 
-        <div class="credits-image">
-            <img src="./img/bander_elencos.png" alt="Imagen de los Elencos Estables">
+        <div class="container">
+
+            <div class="credits-elencos">
+                <h2>Elencos Estables:</h2>
+                <p id="elenco-01">Banda Sinfónica Nacional de Ciegos “Pascual Grisolía”</p>
+                <p id="elenco-02">Coro Nacional de Música Argentina</p>
+                <p id="elenco-03">Coro Nacional de Niños</p>
+                <p id="elenco-04">Coro Polifónico Nacional</p>
+                <p id="elenco-05">Coro Polifónico Nacional de Ciegos “Carlos Larrimbe”</p>
+                <p id="elenco-06">Orquesta Nacional de Música Argentina “Juan de Dios Filiberto””</p>
+                <p id="elenco-07">Orquesta Sinfónica Nacional</p>
+                <p id="elenco-08">Programa Escuela de Canto Coral</p>
+                <p id="elenco-09">Ballet Folklórico Nacional </p>
+                <p id="elenco-10">Compañía Nacional de Danza Contemporánea</p>
+            </div>
+
+            <div class="credits-buttons">
+                <a target="_blank" href="https://www.instagram.com/elencosestables/">Instagram</a>
+                <a target="_blank" href="https://www.facebook.com/DireccionNacionalElencosEstables/">Facebook</a>
+                <a target="_blank"
+                    href="https://www.argentina.gob.ar/noticias/cancionero-patrio-nuevas-versiones-de-nuestras-canciones-patrias-realizada-por-los-elencos">Mas
+                    Info</a>
+            </div>
+
+            <div class="names">
+                <p><span>Dirección Musical: </span>Mtro. Invitado Gustavo Fontana</p>
+                <p><span>Producción musical, Registro, edición y curaduría: </span>Oscar Mediavilla</p>
+                <p><span>Dirección, idea y Producción general: </span>Mariela Bolatti</p>
+                <p><span>Producción artística: </span>Roberto López</p>
+            </div>
+
+            <div class="advisors">
+                <h4>Asesores Artísticos:</h4>
+                <p>Andres Ascenio</p>
+                <p>Sebastián Prusak</p>
+                <p>Ricardo Salton</p>
+                <p>Adrian Moreno</p>
+                <p>Georgina García</p>
+            </div>
+
+            <p class="end">Agradecimiento especial por el compromiso y profesionalismo a todo el equipo técnico-artístico y
+                administrativo-artístico de la Dirección Nacional de Elencos Estables, altamente capacitado que hacen
+                posible cada actividad de esta dirección.</p>
+
         </div>
-
-        <div class="credits-buttons">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Ver Mas</a>
-        </div>
-
-        <div class="names"></div>
-
-        <div class="advisors"></div>
-
-        <p> </p>
 
     </section>
 
@@ -177,4 +374,5 @@
     <script src="./script.js"></script>
 
 </body>
+
 </html>

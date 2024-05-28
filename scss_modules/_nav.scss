@@ -1,0 +1,162 @@
+.nav {
+    margin-top: 13vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2rem;
+
+    .nav-buttons {
+        a {
+            width: 100%;
+            margin-bottom: 2rem;
+            aspect-ratio: 1;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            background: rgb(102,159,208);
+            background: linear-gradient(45deg, rgba(102,159,208,1) 0%, rgba(47,53,88,1) 48%, rgba(45,49,83,1) 50%);
+            background-size: 250%;
+            background-position: 100%;
+            border-radius: 2rem;
+            outline: 2px $color-light-blue solid;
+            transition: .15s ease-in-out;
+
+            .first {
+                width: 40%;
+            }
+
+            .second {
+                width: 60%;
+            }
+
+            &:hover {
+                background-position: 0%;
+                outline: 6px $color-light-blue solid;
+            }
+        }
+
+        button {
+            width: 100%;
+            cursor: pointer;
+            background: rgb(102,159,208);
+            background: linear-gradient(45deg, rgba(102,159,208,1) 0%, rgba(47,53,88,1) 48%, rgba(45,49,83,1) 50%);
+            background-size: 250%;
+            background-position: 100%;
+            border-radius: 2rem;
+            border: 2px $color-light-blue solid;
+            transition: .15s ease-in-out;
+
+            p {
+                font-weight: bold;
+                font-size: 2.5rem;
+                color: #fff;
+            }
+
+            &:hover {
+                background-position: 0%;
+            }
+        }
+    }
+
+    .nav-songs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .nav-song-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-dark-blue;
+            border: none;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+
+            .song-left {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2.5rem;
+
+                p {
+                    color: #fff;
+                    margin: 0;
+                    margin-right: 2rem;
+                    font-size: 2.5rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+
+            .song-right {
+                margin-right: 2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+
+                div {
+                    width: 2.2rem;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                }
+
+                #dot-01 {
+                    background-color: #0c704e;                
+                }
+                #dot-02 {
+                    background-color: #e87a3d;
+                }
+                #dot-03 {
+                    background-color: #f9c54d;
+                }
+                #dot-04 {
+                    background-color: #d5231a;
+                }
+                #dot-05 {
+                    background-color: #ca4476;
+                }
+                #dot-06 {
+                    background-color: #4eade3;
+                }
+                #dot-07 {
+                    background-color: #034e92;
+                }
+                #dot-08 {
+                    background-color: #8e2770;
+                }
+                #dot-09 {
+                    background-color: #b6ade4;
+                }
+                #dot-10 {
+                    background-color: #606060;
+                }
+                #dot-11 {
+                    background-color: #07656d;
+                }
+            }
+
+            &::after {
+                content: "";
+                background-color: $color-light-blue;
+                height: 100%;
+                width: 0rem;
+                position: absolute;
+                left: 0;
+                transition: .2s ease-in-out;
+            }
+
+            &:hover {
+                &::after {
+                    width: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.footer {
+    position: relative;
+    background-color: $color-dark-blue;
+
+    div>img {
+        position: absolute;
+        top: -6rem;
+        left: 0;
+        width: 100%;
+    }
+}
