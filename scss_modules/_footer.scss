@@ -4,8 +4,14 @@
 
     div>img {
         position: absolute;
-        top: -6rem;
+        top: -4.3rem;
         left: 0;
         width: 100%;
+    }
+
+    &>img {
+        padding: 6rem 0;
+        width: 80%;
+        margin: 0 auto;
     }
 }

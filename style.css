@@ -796,7 +796,6 @@ ul {
   margin-top: 5vh;
 }
 .credits .container .names p {
-  text-align: center;
   font-size: 3rem;
   margin: 0;
   color: #272d53;
@@ -804,10 +803,6 @@ ul {
 .credits .container .names p span {
   color: #fff;
   font-weight: bold;
-}
-.credits .container .advisors {
-  margin-top: 5rem;
-  text-align: center;
 }
 .credits .container .advisors h4 {
   font-size: 3rem;
@@ -824,6 +819,70 @@ ul {
   margin: 5rem;
 }
 
+@media only screen and (max-width: 1280px) {
+  .credits .container .credits-elencos h2 {
+    font-size: 4rem;
+  }
+  .credits .container .credits-elencos p {
+    font-size: 2.5rem;
+  }
+  .credits .container .names {
+    margin-top: 5vh;
+  }
+  .credits .container .names p {
+    font-size: 2.5rem;
+  }
+  .credits .container .advisors h4 {
+    font-size: 2.5rem;
+  }
+  .credits .container .advisors p {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .credits {
+    padding: 5vh 0;
+  }
+  .credits .container .credits-elencos h2 {
+    font-size: 3rem;
+  }
+  .credits .container .credits-elencos p {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .credits .container .credits-elencos p::before {
+    height: 0;
+  }
+  .credits .container .credits-elencos p:hover::before {
+    width: 0;
+  }
+  .credits .container .credits-buttons {
+    justify-content: center;
+  }
+  .credits .container .credits-buttons a {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .credits .container .names {
+    margin-top: 5vh;
+  }
+  .credits .container .names p {
+    font-size: 2rem;
+  }
+  .credits .container .advisors h4 {
+    font-size: 2rem;
+  }
+  .credits .container .advisors p {
+    font-size: 1.9rem;
+  }
+  .credits .container .end {
+    margin: 3rem 0 4rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
 /** Footer **/
 .footer {
   position: relative;
@@ -831,7 +890,12 @@ ul {
 }
 .footer div > img {
   position: absolute;
-  top: -6rem;
+  top: -4.3rem;
   left: 0;
   width: 100%;
+}
+.footer > img {
+  padding: 6rem 0;
+  width: 80%;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
