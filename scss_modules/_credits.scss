@@ -123,24 +123,24 @@
                 margin: 0;
                 color: #fff;
                 font-size: 2rem;
-                background: rgb(58,128,218);
-                background: linear-gradient(45deg, rgba(58,128,218,1) 0%, rgba(45,49,83,1) 50%);
+                background: rgb(24,115,235);
+                background: linear-gradient(45deg, rgba(24,115,235,1) 0%, rgba(39,45,83,1) 45%);
                 background-size: 250%;
                 background-position: 100%;
                 transition: .15s ease-in-out;
 
                 &:first-of-type {
                     border-radius: 2rem 0 0 2rem;
-                    background: rgb(218,58,96);
-                    background: linear-gradient(45deg, rgba(218,58,96,1) 0%, rgba(45,49,83,1) 50%);
+                    background: rgb(247,0,77);
+                    background: linear-gradient(45deg, rgba(247,0,77,1) 0%, rgba(39,45,83,1) 45%);
                     background-size: 250%;
                     background-position: 100%;
                 }
 
                 &:last-of-type {
                     border-radius: 0 2rem 2rem 0;
-                    background: rgb(87,58,218);
-                    background: linear-gradient(45deg, rgba(87,58,218,1) 0%, rgba(45,49,83,1) 50%);
+                    background: rgb(144,24,235);
+                    background: linear-gradient(45deg, rgba(144,24,235,1) 0%, rgba(39,45,83,1) 45%);
                     background-size: 250%;
                     background-position: 100%;
                 }
@@ -255,7 +255,7 @@
     
                 a {
                     font-size: 1rem;
-                    padding: 0;
+                    padding: 2rem;
                 }
             }
     
