@@ -29,10 +29,11 @@
                 &::before {
                     content: "";
                     position: absolute;
-                    bottom: 0.8rem;
-                    left: 0;
-                    width: 0;
-                    height: 1rem;
+                    bottom: 1rem;
+                    left: -3rem;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 2rem;
                     background-color: #ffffff1e;
                     z-index: -1;
                     transition: .3s ease-in-out;
@@ -40,71 +41,61 @@
             }
 
             #elenco-01 {
-                &:hover::before {
-                    width: 19rem;
+                &::before {
                     background-color: #0c704e;
                 }
             }
 
             #elenco-02 {
-                &:hover::before {
-                    width: 16.6rem;
+                &::before {
                     background-color: #e87a3d;
                 }
             }
 
             #elenco-03 {
-                &:hover::before {
-                    width: 16.6rem;
+                &::before {
                     background-color: #f9c54d;
                 }
             }
 
             #elenco-04 {
-                &:hover::before {
-                    width: 18rem;
+                &::before {
                     background-color: #d5231a;
                 }
             }
 
             #elenco-05 {
-                &:hover::before {
-                    width: 18rem;
+                &::before {
                     background-color: #ca4476;
                 }
             }
 
             #elenco-06 {
-                &:hover::before {
-                    width: 22rem;
+                &::before {
                     background-color: #4eade3;
                 }
             }
 
             #elenco-07 {
-                &:hover::before {
-                    width: 22.5rem;
+                &::before {
                     background-color: #034e92;
                 }
             }
 
             #elenco-08 {
-                &:hover::before {
-                    width: 21.4rem;
+                &::before {
                     background-color: #8e2770;
                 }
             }
 
             #elenco-09 {
-                &:hover::before {
-                    width: 19rem;
+                &::before {
                     background-color: #b6ade4;
                 }
             }
 
             #elenco-10 {
-                &:hover::before {
-                    width: 23rem;
+                &::before {
                     background-color: #606060;
                 }
             }
@@ -123,24 +114,24 @@
                 margin: 0;
                 color: #fff;
                 font-size: 2rem;
-                background: rgb(24,115,235);
-                background: linear-gradient(45deg, rgba(24,115,235,1) 0%, rgba(39,45,83,1) 45%);
+                background: rgb(24, 115, 235);
+                background: linear-gradient(45deg, rgba(24, 115, 235, 1) 0%, rgba(39, 45, 83, 1) 45%);
                 background-size: 250%;
                 background-position: 100%;
                 transition: .15s ease-in-out;
 
                 &:first-of-type {
                     border-radius: 2rem 0 0 2rem;
-                    background: rgb(247,0,77);
-                    background: linear-gradient(45deg, rgba(247,0,77,1) 0%, rgba(39,45,83,1) 45%);
+                    background: rgb(247, 0, 77);
+                    background: linear-gradient(45deg, rgba(247, 0, 77, 1) 0%, rgba(39, 45, 83, 1) 45%);
                     background-size: 250%;
                     background-position: 100%;
                 }
 
                 &:last-of-type {
                     border-radius: 0 2rem 2rem 0;
-                    background: rgb(144,24,235);
-                    background: linear-gradient(45deg, rgba(144,24,235,1) 0%, rgba(39,45,83,1) 45%);
+                    background: rgb(144, 24, 235);
+                    background: linear-gradient(45deg, rgba(144, 24, 235, 1) 0%, rgba(39, 45, 83, 1) 45%);
                     background-size: 250%;
                     background-position: 100%;
                 }
@@ -190,30 +181,30 @@
 @media only screen and (max-width: 1280px) {
     .credits {
         .container {
-    
+
             .credits-elencos {
                 h2 {
                     font-size: 4rem;
                 }
-    
+
                 p {
                     font-size: 2.5rem;
                 }
             }
-    
+
             .names {
                 margin-top: 5vh;
-    
+
                 p {
                     font-size: 2.5rem;
                 }
             }
-    
+
             .advisors {
                 h4 {
                     font-size: 2.5rem;
                 }
-    
+
                 p {
                     font-size: 2.3rem;
                 }
@@ -226,14 +217,14 @@
     .credits {
         padding: 5vh 0;
 
-    
+
         .container {
-    
+
             .credits-elencos {
                 h2 {
                     font-size: 3rem;
                 }
-    
+
                 p {
                     font-size: 2rem;
                     line-height: 2.2rem;
@@ -251,32 +242,38 @@
             }
 
             .credits-buttons {
-                justify-content: center;
-    
+                flex-direction: column;
+
                 a {
-                    font-size: 1rem;
-                    padding: 2rem;
+                    border-radius: 2rem;
+                    &:first-of-type {
+                        border-radius: 2rem;
+                    }
+
+                    &:last-of-type {
+                        border-radius: 2rem;
+                    }
                 }
             }
-    
+
             .names {
                 margin-top: 5vh;
-    
+
                 p {
                     font-size: 2rem;
                 }
             }
-    
+
             .advisors {
                 h4 {
                     font-size: 2rem;
                 }
-    
+
                 p {
                     font-size: 1.9rem;
                 }
             }
-    
+
             .end {
                 margin: 3rem 0 4rem;
                 text-align: center;

@@ -2,7 +2,7 @@
     position: relative;
     background-color: $color-dark-blue;
 
-    div>img {
+    .footer-divisor>img {
         position: absolute;
         top: -4.3rem;
         left: 0;
@@ -10,8 +10,50 @@
     }
 
     &>img {
-        padding: 6rem 0;
+        padding: 6rem 0 3rem;
         width: 80%;
         margin: 0 auto;
+    }
+
+    .signature {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-dark-blue;
+        gap: 0;
+
+        img {
+            margin: 0;
+            height: 2rem;
+            opacity: 0.6;
+        }
+
+        p {
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+            margin: 0;
+            color: #ffffff9f;
+            background-color: $color-dark-blue;
+            padding: 2rem 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        &>img {
+            padding: 6rem 0 2rem;
+        }
+
+        .signature {
+            width: 80%;
+    
+            p {
+                font-size: 1.2rem;
+                line-height: 1.2rem;
+            }
+        }
     }
 }

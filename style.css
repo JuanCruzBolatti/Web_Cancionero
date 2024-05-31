@@ -705,12 +705,18 @@ ul {
     width: 100%;
   }
   .see-more-buttons {
-    margin-top: 0rem;
-    justify-content: flex-end;
+    width: 50%;
+    margin: 0rem auto;
+    justify-content: center;
     gap: 1rem;
   }
   .see-more-buttons a {
-    padding: 1rem;
+    padding: 2vh;
+    height: 9vh;
+    aspect-ratio: 1;
+  }
+  .see-more-buttons a img {
+    margin: 0 auto;
   }
   .audio-player {
     height: 9vh;
@@ -811,52 +817,43 @@ ul {
 .credits .container .credits-elencos p::before {
   content: "";
   position: absolute;
-  bottom: 0.8rem;
-  left: 0;
-  width: 0;
-  height: 1rem;
+  bottom: 1rem;
+  left: -3rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
   background-color: rgba(255, 255, 255, 0.1176470588);
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.credits .container .credits-elencos #elenco-01:hover::before {
-  width: 19rem;
+.credits .container .credits-elencos #elenco-01::before {
   background-color: #0c704e;
 }
-.credits .container .credits-elencos #elenco-02:hover::before {
-  width: 16.6rem;
+.credits .container .credits-elencos #elenco-02::before {
   background-color: #e87a3d;
 }
-.credits .container .credits-elencos #elenco-03:hover::before {
-  width: 16.6rem;
+.credits .container .credits-elencos #elenco-03::before {
   background-color: #f9c54d;
 }
-.credits .container .credits-elencos #elenco-04:hover::before {
-  width: 18rem;
+.credits .container .credits-elencos #elenco-04::before {
   background-color: #d5231a;
 }
-.credits .container .credits-elencos #elenco-05:hover::before {
-  width: 18rem;
+.credits .container .credits-elencos #elenco-05::before {
   background-color: #ca4476;
 }
-.credits .container .credits-elencos #elenco-06:hover::before {
-  width: 22rem;
+.credits .container .credits-elencos #elenco-06::before {
   background-color: #4eade3;
 }
-.credits .container .credits-elencos #elenco-07:hover::before {
-  width: 22.5rem;
+.credits .container .credits-elencos #elenco-07::before {
   background-color: #034e92;
 }
-.credits .container .credits-elencos #elenco-08:hover::before {
-  width: 21.4rem;
+.credits .container .credits-elencos #elenco-08::before {
   background-color: #8e2770;
 }
-.credits .container .credits-elencos #elenco-09:hover::before {
-  width: 19rem;
+.credits .container .credits-elencos #elenco-09::before {
   background-color: #b6ade4;
 }
-.credits .container .credits-elencos #elenco-10:hover::before {
-  width: 23rem;
+.credits .container .credits-elencos #elenco-10::before {
   background-color: #606060;
 }
 .credits .container .credits-buttons {
@@ -962,11 +959,16 @@ ul {
     width: 0;
   }
   .credits .container .credits-buttons {
-    justify-content: center;
+    flex-direction: column;
   }
   .credits .container .credits-buttons a {
-    font-size: 1rem;
-    padding: 2rem;
+    border-radius: 2rem;
+  }
+  .credits .container .credits-buttons a:first-of-type {
+    border-radius: 2rem;
+  }
+  .credits .container .credits-buttons a:last-of-type {
+    border-radius: 2rem;
   }
   .credits .container .names {
     margin-top: 5vh;
@@ -991,14 +993,49 @@ ul {
   position: relative;
   background-color: #272d53;
 }
-.footer div > img {
+.footer .footer-divisor > img {
   position: absolute;
   top: -4.3rem;
   left: 0;
   width: 100%;
 }
 .footer > img {
-  padding: 6rem 0;
+  padding: 6rem 0 3rem;
   width: 80%;
   margin: 0 auto;
+}
+.footer .signature {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #272d53;
+  gap: 0;
+}
+.footer .signature img {
+  margin: 0;
+  height: 2rem;
+  opacity: 0.6;
+}
+.footer .signature p {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6235294118);
+  background-color: #272d53;
+  padding: 2rem 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer > img {
+    padding: 6rem 0 2rem;
+  }
+  .footer .signature {
+    width: 80%;
+  }
+  .footer .signature p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

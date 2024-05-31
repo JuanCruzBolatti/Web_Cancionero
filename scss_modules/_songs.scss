@@ -330,12 +330,19 @@
     }
 
     .see-more-buttons {
-        margin-top: 0rem;
-        justify-content: flex-end;
+        width: 50%;
+        margin: 0rem auto;
+        justify-content: center;
         gap: 1rem;
 
         a {
-            padding: 1rem;
+            padding: 2vh;
+            height: 9vh;
+            aspect-ratio: 1;
+
+            img {
+                margin: 0 auto;
+            }
         }
     }
 
